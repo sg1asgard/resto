@@ -1,5 +1,5 @@
 import type { MetaFunction } from '@remix-run/node'
-import Menu from 'public/components/MenuComponent'
+import Menu from '~/components/MenuComponent'
 
 export const meta: MetaFunction = () => {
   return [{ title: 'New Remix App' }, { name: 'description', content: 'Welcome to Remix!' }]

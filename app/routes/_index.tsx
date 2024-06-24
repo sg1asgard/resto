@@ -1,6 +1,6 @@
 import type { MetaFunction } from '@remix-run/node'
 import { createClient } from '@supabase/supabase-js'
-import Menu from 'public/components/MenuComponent'
+import Menu from '~/components/MenuComponent'
 
 // Create a single supabase client for interacting with your database
 // const supabase = createClient(`${process.env.SUPA_PROJECT_URL}`, `${process.env.SUPA_API_KEY}`)
