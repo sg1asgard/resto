@@ -6,6 +6,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import "./styles/main.css";
+import Menu from '~/components/MenuComponent'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
+        <Menu />
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -27,4 +29,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return <Outlet />;
+}
+
+// In case I want to add more style, or js or other things into <header></header>
+export function links() {
+  []
 }
