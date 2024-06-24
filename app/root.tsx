@@ -1,11 +1,5 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from "@remix-run/react";
-import "./styles/main.css";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import './styles/main.css'
 import Menu from '~/components/MenuComponent'
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -18,17 +12,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Menu />
+        <header>
+          <Menu />
+        </header>
         {children}
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
-  );
+  )
 }
 
 export default function App() {
-  return <Outlet />;
+  return <Outlet />
 }
 
 // In case I want to add more style, or js or other things into <header></header>
